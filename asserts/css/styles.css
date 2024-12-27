@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 75px;
+ background: #191a1b;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+ 
+}
+
+
+
+nav .navbar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+ max-width: 90%;
+ background: #111213;
+ margin: auto;
+}
+nav .navbar .logo a{
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav .navbar .menu{
+  display: flex;
+}
+.navbar .menu li{
+  list-style: none;
+  margin: 0 15px;
+  
+}
+.navbar .menu li a{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar .menu li a:hover {
+  background-color: rgb(28, 30, 26);
+  
+}
+section{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#Home{
+  background: #fff;
+}
+#About{
+  background: #f2f2f2;
+}
+#Category{
+  background: #e6e6e6;
+}
+#Latest{
+  background: #fff;
+}
+#Contact{
+  background: #f2f2f2;
+}
+#Feedback{
+  background: #e6e6e6;
+}
+.button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #2980b9;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+
+/*-----------Login page-----------*/
+
+
+
+
+/* Body Styling */
+.logc {
+  margin: 10px;
+  padding: 200px;
+  font-family: Arial, sans-serif;
+  background: url("https://images.unsplash.com/photo-1657348477443-df0e64783d8b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwYWdyaWN1bHR1cmV8ZW58MHx8MHx8fDA%3D");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 2000px;
+}
+
+/* Container Styling */
+.containerlg {
+  width: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading Styling */
+.containerlg h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Input Fields Styling */
+.containerlg input[type="text"],.containerlg input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Submit Button Styling */
+.containerlg input[type="submit"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(46, 214, 38, 0.8);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.containerlg input[type="submit"]:hover {
+  background: rgba(46, 214, 38, 1);
+}
+
+/* Placeholder Text Styling */
+.containerlg ::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+/* Password Reset Link Styling */
+.psw {
+  display: block;
+  margin-top: 10px;
+}
+
+.psw a {
+  color: #00f;
+  text-decoration: none;
+}
+
+.psw a:hover {
+  text-decoration: underline;
+}
+
+/*--------Sign Up--------------*/
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.containersup {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+/*---------Home page-----------*/
+
+
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 0px;
+}
+
+div.scroll-container img {
+  padding: 0px;
+}
+
+/*------------About Page-----*/
+
+.mask {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url(https://media.istockphoto.com/id/1346294867/photo/smart-farming-concept.jpg?s=612x612&w=0&k=20&c=wwiWQWIaTAojgCV8lOplPh4cA8g2spKbESFD-nV7TVA=) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mask1 {
+  padding: 200px;
+  width: fit-content;
+  height: fit-content;
+  overflow-y: scroll;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+
+/*--------------Contact Page--------*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+/*---------Contact Page----------*/
+
+
+
+
+.container1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 .contact_data {
+  background: #fff;
+  width: 600px;
+  border-radius: 02px;
+  border-top: 04px solid #47b2e4;
+  margin: 0 10px;
+}
+
+.container1 .contact_data form {
+  padding: 0 1rem;
+}
+
+.container1 .contact_data form input,
+textarea {
+  width: 95%;
+  margin: 05px 0 0 10px;
+  padding: 07px 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  border-radius: 05px;
+}
+
+.container1 .contact_data h2 {
+  margin: 1.5rem;
+  border-bottom: 0.2rem #47b2e4 solid;
+  width: 25%;
+}
+
+.container1 .contact_data label {
+  display: block;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.container1 .contact_data button {
+  margin: 20px 10px;
+  border: none;
+  padding: 10px 20px;
+  background: #47b2e4;
+  font-size: 1rem;
+  border-radius: 05px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.container1 .contact_data button:hover {
+  background: #3498db;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.container1 .contact_data2 {
+  background: #fff;
+  border-radius: 02px;
+  border-top: 04px solid #3498db;
+  width: 400px;
+  margin: 0 10px;
+}
+
+.container1 .contact_data2 ul {
+  list-style: none;
+}
+
+.container1 .contact_data2 ul li {
+  margin: 1.5rem 1rem;
+}
+
+.container1 .contact_data2 ul li i {
+  font-size: 1.4rem;
+  color: #47b2e4;
+}
+
+.container1 .contact_data2 ul li strong {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.container1 .contact_data2 ul li p {
+  font-size: 14px;
+  margin-left: 35px;
+}
+
+.container1 .contact_data2 .map iframe {
+  width: 90%;
+  height: 280px;
+  margin: 0 1rem;
+}
+
+@media (max-width: 1037px) {
+  .container1 .contact_data,
+  .contact_data2 {
+    width: 80%;
+    margin: 10px 0px;
+  }
+  .container1 .contact_data h2 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 .contact_data2 {
+    width: 75%;
+    margin: 10px 0px;
+  }
+  .container1 .contact_data h2 {
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------footer tag---*/
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.containerf{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #18191b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+/*-----------product card--------*/
+
+
+
+
+.galleryp{
+  padding-top: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 10px;
+}
+
+
+.galleryp .contentp{
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+  0 10px 10px rgba(0,0,0,0.22);
+  transition: .4s;
+  background: #fbfcfb;
+}
+
+.galleryp .contentp h3{
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.galleryp .contentp a{
+  text-decoration: none;
+
+
+}
+
+.galleryp .contentp:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25),0 3px 6px rgba(0,0,0,0.23);
+  transform: translate(0px,-8px);
+}
+
+.galleryp .contentp img{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+ 
+}
+
+.galleryp .contentp img.hover{
+  transform: translate(0px,-8px);
+}
+
+
+.galleryp .contentp p{
+  text-align: center;
+  color: black;
+  padding-top: 0 8px;
+}
+
+.galleryp .contentp h6{
+  font-size: 26px;
+  text-align: center;
+  color: #474e5d;
+  margin: 0;
+
+}
+
+
+.galleryp .contentp ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.galleryp .contentp li{
+  padding-top: 5px;
+}
+
+
+.fa-star{
+  font-size: 26px;
+  transition: .2s;
+}
+
+.checked{
+  color: rgb(173, 122, 27);
+}
+
+.fa-star:hover{
+  transform: scale(1,3);
+  transition: .6s;
+}
+
+
+button{
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-top-right-radius: 20px;
+}
+
+
+.buy-1{
+  background: #6d9cbc;
+}
+.buy-1{
+  background: #6d9cbc;
+}
+.buy-1{
+  background: #6d9cbc;
+}
+
+
+@media(max-width:1000px){
+  .contentp{
+    width:45px;
+  }
+}
+
+@media(max-width:750px){
+  .contentp{
+    width:100%;
+  }
+}
